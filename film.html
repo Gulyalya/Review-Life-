@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дюна: Часть вторая</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://posterspy.com/wp-content/uploads/2023/05/Dune-2-Poster-4x5-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* чтобы фон оставался на месте при прокрутке */
+            color: #f1f1f1;
+        }
+        .hero {
+            background: transparent; /* больше не нужен фон */
+            height: auto; /* высота по контенту */
+        }
+
+/* Фон плаката только для героя */
+        .hero {
+            position: relative;
+            height: 100vh; /* занимает весь экран */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-overlay {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.075); /* полупрозрачная подложка, чтобы текст читался */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Синопсис */
+        .synopsis {
+            padding: 50px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #0a0a0a05; /* читаемый темный фон */
+            color: #f1f1f1;
+        }
+
+
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-text h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 1.5em;
+            margin: 10px 0 0 0;
+        }
+
+        /* Секция синопсиса */
+        .synopsis {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .synopsis h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Актерский состав */
+        .cast {
+            padding: 50px 20px;
+            background-color: #1a1a1a17;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cast h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cast ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cast li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        /* Медиа-секция */
+        .media {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .media h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .media iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        /* Отзывы */
+        .reviews {
+            padding: 50px 20px;
+            background-color: #1a1a1a00;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .reviews h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .review {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 20px;
+        }
+
+        .review p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        .rating {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        /* Футер */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #0a0a0a;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Геройский блок -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Дюна: Часть вторая</h1>
+            <p>Война грядет</p>
+        </div>
+    </section>
+
+    <!-- Синопсис -->
+    <section class="synopsis">
+        <h2>Синопсис</h2>
+        <p>
+            На далекой планете Арракис Пол Атрейдес объединяется с Чани и фременами, мстя за уничтожение своей семьи.
+            Столкнувшись с выбором между любовью всей жизни и судьбой всей Вселенной, он должен предотвратить ужасное будущее,
+            которое видит только он. В его руках судьба песка и самой Империи. Приготовьтесь к захватывающему путешествию
+            в мир песка, интриг и великих битв.
+        </p>
+    </section>
+
+
+    <!-- Актерский состав -->
+    <section class="cast">
+        <h2>Актерский состав</h2>
+        <ul>
+            <li><strong>Тимоти Шаламе:</strong> Пол Атрейдес - главный герой, избранный.</li>
+            <li><strong>Зендея:</strong> Чани - воительница-фременка, любовный интерес Пола.</li>
+            <li><strong>Ребекка Фергюсон:</strong> Леди Джессика - мать Пола, член Бене Гессерит.</li>
+            <li><strong>Джош Бролин:</strong> Гурни Халлек - оружейник дома Атрейдесов.</li>
+            <li><strong>Оскар Айзек:</strong> Герцог Лето Атрейдес (флешбеки)</li>
+            <li><strong>Хавьер Бардем:</strong> Стилгар - лидер фременов.</li>
+            <li><strong>Кристофер Уокен:</strong> Император Шаддам IV</li>
+        </ul>
+    </section>
+
+    <!-- Медиа-секция -->
+    <section class="media">
+        <h2>Официальный трейлер</h2>  
+    <iframe 
+            width="800" 
+            height="450" 
+            src="https://www.youtube.com/embed/_YUzQa_1RCE" 
+            title="Дюна: Часть вторая - трейлер" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews">
+        <h2>Отзывы аудитории</h2>
+
+        <div class="review">
+            <p class="rating">Оценка: 9/10</p>
+            <p>"Визуальная составляющая просто потрясает! Каждый кадр - шедевр, музыка идеально дополняет атмосферу. 
+               Сюжет развивается динамично, а актеры идеально передали характеры своих персонажей. Однозначно рекомендую к просмотру!"</p>
+        </div>
+
+        <div class="review">
+            <p class="rating">Оценка: 8/10</p>
+            <p>"Я был большим поклонником первой части, и вторая часть нисколько не разочаровала! Экшн-сцены захватывают дух, 
+               а развитие персонажей очень хорошо проработано. Небольшой минус – некоторые моменты кажутся немного затянутыми."</p>
+        </div>
+
+        <div class="review">
+            <p class="rating">Оценка: 10/10</p>
+            <p>"Фильм просто великолепен! Игра актеров, графика, сюжет – все на высшем уровне. Это кинематографический шедевр, 
+               который заслуживает просмотра на большом экране. Обязательно пересмотрю еще раз!"</p>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        &copy; 2025 Дюна: Часть вторая. Все права защищены.
+    </footer>
+
+</body>
+</html>
